@@ -7,6 +7,7 @@
     <title>Calculadora rafinha</title>
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/calculadora.css">
+    <link rel="stylesheet" href="css/distanciaEntrePontoeReta.css">
 
 </head>
 <body>
@@ -19,9 +20,31 @@
     <a href="posiçaoRelativadasRetas.html">Posição Relativa das Retas</a>
 </nav>
 
-<h1>Distância entre Ponto e Reta</h1>
+<div class="calculadora">
+    <input type="text" disabled class="display" id="display">
+
+    <div class="pontos">
+        <label> Ponto A</label>
+        <div><span>X:</span><input type="number" class="ponto" id="xPontoA"></div>
+        <div><span>Y:</span><input type="number" class="ponto" id="yPontoA"></div>
+    </div>
+
+    <div class="equacao">
+        <label> Ponto B</label>
+        <div><span>A:</span><input type="number" class="ponto" id="PontoA"></div>
+        <div><span>B:</span><input type="number" class="ponto" id="PontoB"></div>
+        <div><span>C:</span><input type="number" class="ponto" id="PontoC"></div>
+    </div>
+
+    <div class="primeira-linha">
+        <button onclick="limpar()">Limpar</button>
+    </div>
+
+    <div class="segunda-linha">
+        <button onclick="calcularDistanciadePontoeReta ()">Distância Entre Ponto e Reta</button>
+    </div>
 
 
-
+<script src="javascript/distanciaEntrePontoeReta.js"></script>
 </body>
 </html>

@@ -7,6 +7,7 @@
     <title>Calculadora rafinha</title>
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/calculadora.css">
+    <link rel="stylesheet" href="css/posicaorelativadareta.css">
 
 </head>
 <body>
@@ -19,10 +20,28 @@
     <a href="posiçaoRelativadasRetas.html" class="selecionada">Posição Relativa das Retas</a>
 
 </nav>
+<div class="calculadora">
+    <input type="text" disabled class="display" id="display">
 
-<h1>Posição Relativa das Retas</h1>
 
+    <div class="pontos">
+        <label>1° Reta</label>
+        <div><span>M:</span><input type="number" name="" class="ponto" id="M"></div>
+        <div><span>N:</span><input type="number" name="" class="ponto" id="N"></div>
+    </div>
+    <div class="pontos">
+        <label>2° Reta</label>
+        <div><span>M:</span><input type="number" name="" class="ponto" id="M1"></div>
+        <div><span>N:</span><input type="number" name="" class="ponto" id="N1"></div>
+    </div>
+    <div class="primeira-linha">
+        <button onclick="limpar()">LIMPAR</button>
+    </div>
 
+    <div class="segunda-linha">
+        <button onclick="PosicaoR()">Posição Relativa Das Retas</button>
+    </div>
 
+<script src="javascript/posicaorelativadareta.js"></script>
 </body>
 </html>
